@@ -50,7 +50,7 @@ This script will train the XGB model and save it as a `model` file. In both case
 Make predictions on a new dataset with:
 
 ```sh
-python3 scripts/predict.py <model_filename> <threshold> <model_type>
+python3 scripts/predict.py model_filename threshold model_type
 ```
 
-Replace `<model_filename>` with the path to the trained model (e.g., `dnn_model.h5` or `xgboost_model.pkl`), `<threshold>` with the decision threshold (e.g., 0.5), and `<model_type>` with the type of model (dnn or xgboost). The predictions will be saved in `data/predictions.csv`.
+Replace `model_filename` with the path to the trained model (e.g., `dnn_model.h5` or `xgboost_model.pkl`), `threshold` with the decision threshold (e.g., 0.5), and `model_type` with the type of model (dnn or xgboost). The predictions will be saved in `data/predictions.csv`.
